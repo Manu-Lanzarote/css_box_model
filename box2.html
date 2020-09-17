@@ -36,6 +36,24 @@
       #pepe {
         width: 20%;
       }
+      @media (max-width: 600px) {
+        main {
+          flex-wrap: wrap;
+        }
+        #pepe {
+          width: 100%;
+        }
+        h1,
+        h2 {
+          text-align: center;
+          padding: 5px;
+        }
+        nav {
+          width: 100%;
+          padding: 20px;
+          text-align: center;
+        }
+      }
     </style>
   </head>
   <body>
@@ -44,11 +62,11 @@
         <h1>TÍTULO DE LA PÁGINA</h1>
         <h2>subtítulo</h2>
       </div>
-      <div>
+      <nav>
         <a href="https://google.es">GOOGLE</a>
         <a href="https://google.es">YAHOO</a>
         <a href="https://google.es">DUCK DUCK GO</a>
-      </div>
+      </nav>
     </main>
   </body>
 </html>
