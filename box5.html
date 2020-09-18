@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Ej. 5</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 5px;
+      }
+      body {
+        background-color: #222;
+        color: floralwhite;
+      }
+      .sec1 {
+        background-color: rgb(146, 37, 37);
+      }
+      .sec2 {
+        background-color: rgb(17, 66, 41);
+      }
+      .sec1,
+      .sec2 {
+        padding: 20px;
+      }
+      h2 {
+        display: inline;
+      }
+      .titulo {
+        margin: 10px;
+        text-align: center;
+      }
+      #in {
+        color: rgb(146, 37, 37);
+        display: inline;
+        background-color: #fff;
+        padding: 1px 30px;
+        border-radius: 10px;
+      }
+      #no {
+        color: rgb(17, 66, 41);
+        display: inline;
+        background-color: #fff;
+        padding: 1px 30px;
+        border-radius: 10px;
+      }
+      .intro h3 {
+        text-transform: uppercase;
+      }
+      .contenedor_intros,
+      .contenedor_noticias {
+        display: flex;
+      }
+      .intro,
+      .noti {
+        padding: 20px;
+      }
+      @media (max-width: 600px) {
+        .contenedor_intros,
+        .contenedor_noticias {
+          flex-wrap: wrap;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="sec1">
+        <div class="titulo"><h2 id="in">INTROS</h2></div>
+
+        <div class="contenedor_intros">
+          <div class="intro">
+            <h3>Lorem ipsum dolor sit.</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit
+              asperiores quibusdam cumque accusamus culpa voluptatem hic
+              eligendi harum, libero fuga tenetur minima fugit neque quisquam
+              recusandae atque laboriosam itaque odit.
+            </p>
+          </div>
+          <div class="intro">
+            <h3>Lorem ipsum dolor sit.</h3>
+            <p>
+              Eligendi eaque quia facere sunt obcaecati exercitationem aliquid
+              sapiente, ratione illo alias, rem veniam enim atque. Ab mollitia
+              voluptatibus nobis error, sit itaque. Mollitia, dicta minima
+              reprehenderit soluta molestias illo.
+            </p>
+          </div>
+          <div class="intro">
+            <h3>Lorem ipsum dolor sit.</h3>
+            <p>
+              Magni dolorum dicta in sint dignissimos! Aperiam fugit atque
+              molestiae quaerat sit ut temporibus magnam ad, facilis eaque unde
+              esse iure voluptatum maxime dicta fuga voluptas, cumque voluptate
+              expedita ea.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="sec2">
+        <div class="titulo"><h2 id="no">NOTICIAS</h2></div>
+
+        <div class="contenedor_noticias">
+          <div class="noti">
+            <h3>Lorem ipsum dolor sit amet.</h3>
+            <p>
+              Optio animi, fugiat maiores libero, accusantium neque laudantium
+              quas iure magni, dolores qui amet vero! Doloribus laborum,
+              perspiciatis minima libero earum nihil possimus quasi. Distinctio
+              obcaecati qui suscipit tempora doloribus.
+            </p>
+          </div>
+          <div class="noti">
+            <h3>Lorem ipsum dolor sit amet.</h3>
+            <p>
+              Delectus hic cupiditate ab totam itaque quo. Maiores est
+              perferendis saepe deleniti quas dolore commodi natus sed, nulla
+              atque, veniam repellendus excepturi doloribus temporibus! Sunt
+              autem itaque laboriosam modi quasi!
+            </p>
+          </div>
+          <div class="noti">
+            <h3>Lorem ipsum dolor sit amet.</h3>
+            <p>
+              Repellendus est quae placeat. Dolor eos eligendi vero incidunt
+              voluptatibus dolores exercitationem pariatur voluptates veniam
+              alias! Officia dignissimos quis enim ullam temporibus eligendi
+              consequatur, nemo, voluptas accusantium, facilis odio provident?
+            </p>
+          </div>
+          <div class="noti">
+            <h3>Lorem ipsum dolor sit amet.</h3>
+            <p>
+              Repellendus est quae placeat. Dolor eos eligendi vero incidunt
+              voluptatibus dolores exercitationem pariatur voluptates veniam
+              alias! Officia dignissimos quis enim ullam temporibus eligendi
+              consequatur, nemo, voluptas accusantium, facilis odio provident?
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
